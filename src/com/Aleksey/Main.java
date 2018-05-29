@@ -16,10 +16,10 @@ public class Main {
         System.out.print("enter the size of  : ");
         n = in.nextInt();
         arr = new int[n];
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = (int) (10 + Math.random() * 91);
-        for (int i : arr)
-            System.out.print(i + " ");
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = (int) (10 + Math.random() * 91);}
+        for (int i : arr){
+            System.out.print(i + " ");}
         OptionalInt max = Arrays.stream(arr).max();
         OptionalInt min = Arrays.stream(arr).min();
         for (int i = 1; i < arr.length; i++) {
